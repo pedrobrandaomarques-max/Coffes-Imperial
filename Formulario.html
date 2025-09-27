@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="formulario">
+        <form method="post" id="fcontato" action="mailto:pedrobrandaomarques@gmail.com">
+        <fieldset id="usuario">
+            <legend>Identificação do usuario</legend>
+
+            <label for="cNOME"> NOME</label>
+            <input type="text" name="tNome" id="cNOME" size="20" maxlength="20" placeholder=" Digite seu nome aqui " autofocus required>
+
+            <p>
+                <label for="cSenha"> Senha</label>
+                <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 digitos" required/>
+            </p>
+
+            <p>
+                <label for="cMail"> E-mail</label>
+                <input type="email" name="tMail" id="cMail" size="30" maxlength="30" placeholder="Ex: exemplo@mail.com" required/>
+            </p>
+
+             <Fieldset id="sexo">
+                <legend> Sexo:</legend>
+                <input type="radio" name="tSexo" id=" cMasc">
+                <label for="cMasc"> Masculino</label>
+                <br>
+                <input type="radio" name="tSexo" id=" cFem">
+                <label for="cFem"> Feminino</label>
+             </Fieldset>
+
+        <p>
+            Data de Nascimento <input type="date" name="tNasc" id="cNasc">
+        </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço do Usuario</legend>
+
+            <p>
+                <label for="cRua">Logradouro:</label>
+                <input type="text" name="tRua" id="cRua" size="30" maxlength="50" placeholder="Rua, av, trav,..." required>
+            </p>
+
+            <p>
+                <label for="cNum">Numero</label>
+                <input type="number" name="tNum" id="cNum" min="0" max="999999999"/>
+            </p>
+
+            <p>
+                <label for="cEst"> Estado:</label>
+                <select name="tEst" id="cEst">
+                    <optgroup label="Região Sudete">
+                        <option value="SP" selected> São Paulo</option>
+                        <option value="MG"> Minas Gerais</option>
+                        <option value="RJ"> Rio de Janeiro</option>
+                        <option value="ES"> Espirito Santo</option>
+
+                    </optgroup>
+
+                      <optgroup label="Região Sul">
+                        <option value="PR"> Parana</option>
+                        <option value="SC"> Santa Catarina</option>
+                        <option value="RS"> Rio Grande do Sul </option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+
+        <fieldset id="mensagem">
+            <legend> Mensagem do Usuario</legend>
+            <p>
+                <label for="cUrg"> Grau de Urgenecia:</label>
+                Min <input type="range" name="tUrg" id="cUrg" min="0" max="10"/> Max
+            </p>
+            <p>
+                <label for="cMsg">Mensagem</label> <br>
+                <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe sua mensagem aqui" style="resize: none;"></textarea>
+            </p>
+
+
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" name="limpar">
+
+    </form>
+    </div>
+</body>
+</html>

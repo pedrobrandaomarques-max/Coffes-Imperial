@@ -1,0 +1,393 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing:  border-box;
+
+}
+body{
+    height: 100%;
+}
+
+header{
+width: 100%;
+height: 130px;
+display: flex;
+background-color: rgb(28, 22, 22);
+}
+
+header .box-logo{
+    width: 50%;
+    padding: 10px;
+}
+
+.box-logo img{
+    width: 12%;
+    border-radius: 100%;
+    background-color: brown;
+
+}
+header .box-nav{
+    width: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+   
+    
+}
+header .box-nav nav ul{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    padding: 20px;
+}
+header .box-nav nav ul li a{
+    text-decoration:none;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 10px;
+    color: rgb(245, 245, 245);
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 1px;
+    margin: 10px;
+}
+nav ul li a:hover{
+    background-color:rgb(239, 212, 2);
+    transition: all .5s;
+    border-radius: 15px;
+
+}
+
+.bannerHover{
+    height: 600px;
+    width: 1900px;
+    background-image: url('../imagens/Prancheta\ 1.png');
+    background-size: cover;
+    background-position: center;
+    transition: backgrond-image 05s ease-in-out;
+}
+
+.bannerHover:hover{
+    background-image: url('../imagens/Prancheta\ 2.png');
+}
+.banner{
+    width: 100%;
+    height: 500px;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+
+.conteiner_principal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 20px 2%;
+}
+.box_card{
+    width: 33.33%;
+    height: 100%;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 15px;
+    margin-left: 10px;
+    text-align:end;
+}
+.box_card img{
+    width: 100%;
+    height: 100%;
+}
+.box_card h2{
+    text-align: center;
+}
+.box_card p{
+    font-size: 16px;
+    line-height: 25px;
+    text-align: start /*centralizar o texto*/
+}
+
+
+.conteiner_secundario{
+    width: 100%;
+    height: 100%;
+    padding:20px 2%;
+    display: flex;
+}
+.box_expresso{
+    width: 50%;
+}
+.box_expresso img{
+    width: 100%;
+    height: 100%;
+}
+.texto{
+    width: 50%;
+    padding: 10px 2%;
+}
+.texto h1{
+    text-align: center;
+    background-color: #654321;
+    padding: 15px;
+    text-transform: uppercase;
+    color: white;
+
+}
+.texto p{
+    line-height: 25px;
+}
+.conteiner_terciario{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+}
+
+.box_inf{
+    width: 50%;
+    padding: 20px 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.icons{
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+    
+}
+.icons img{
+    width: 100px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.icons a{
+    position: absolute;
+    margin-top: 60px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 30px;
+    
+}
+.box_rede{
+    width: 50%;
+    padding:  25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box_rede img{
+    width: 70%;
+    height: 100%;
+    padding: 40px 2%;
+}
+
+.box_rede h1{
+    color: rgb(230, 242, 2);
+    text-transform: uppercase;
+}
+/*cardapiooooooo*/
+
+.conteiner{ 
+    width: 100%;
+    height: auto;
+    padding: 25px;
+
+}
+.box{
+    display: flex;
+    margin: 10px;
+    
+}
+.box_card2{
+    width: 25%;
+    height: 100%;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    margin-left: 10px;
+    background-color: white;
+}
+.box_card2 img{
+    width: 100%;
+    height: 100%;
+    
+}
+.zoom{
+    transition: transform 0.3s ease;
+}
+.zoom:hover{
+     transform: scale(1.2);
+
+}
+
+footer{
+     background-color: rgb(150, 150, 150);
+    width: 100%;
+    padding: 40px 2%;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+/* começo formulario/contato */
+
+.form{
+width:100% ;
+height:100% ;
+border: 1px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 50px 2%;
+}
+
+.form form{
+width: 800px;
+height: auto;
+border: 1px solid black;
+padding: 15px 1%;
+}
+
+.form label{
+font-size: 22px;
+}
+
+.form input{
+    width: 100%;
+    height:30px ;
+}
+
+
+
+input, textarea{
+    width: 100%;
+font-family:Verdana, sans-serif;
+    font-weight: normal;
+    background-color: rgb(248, 251, 112);
+    font-family: Century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-color: black;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+/*breakpoints, cor de tela em diferente dispositivos*/ 
+
+@media screen and (max-width: 576px) {
+    body{
+        background-color: red;
+    }
+
+    
+  header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    
+    
+  }
+
+  .box-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+  }
+
+  .box-nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+  }
+
+ 
+
+  .box-nav nav ul li a{
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+   
+  }
+
+  .bannerHover{
+    width: 100%;
+    height: 450px;
+  }
+
+  .conteiner-principal{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 2%;
+    
+  }
+
+  .box-card{
+    width: 100%;
+    margin-bottom: 2%;
+    margin-left: 1px;
+    
+    
+  }
+
+  .conteiner-secundario{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5%;
+  }
+
+  .box-img{
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .box-texto{
+    width: 100%;
+  }
+
+  .box-texto p{
+    text-align: center;
+  }
+
+  .conteiner-terciario{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 2%;
+  }
+  
+  .box-info{
+    width: 100%;
+  }
+
+  .box-rede{
+    width: 100%;
+  }
+
+  .box-rede img{
+    width: 100%;
+  }
+  /*PAFINA CARDAPIO*/
+
+  .box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+      
+  }
+  .box-card2{
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 2%;
+    
+  }
+
+
+}
